@@ -2,7 +2,6 @@ module demux_1_8(y,s,a);
 output reg [7:0]y;
 input [2:0]s;
 input a;
-
 always @(*)
 begin 
 y=0;
