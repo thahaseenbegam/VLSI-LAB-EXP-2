@@ -3,8 +3,8 @@ SIMULATION AND IMPLEMENTATION OF  COMBINATIONAL LOGIC CIRCUITS
 AIM: 
  To simulate and synthesis ENCODER, DECODER, MULTIPLEXER, DEMULTIPLEXER, MAGNITUDE COMPARATOR using Xilinx ISE.
 
-APPARATUS REQUIRED:
-Xilinx 14.7
+# APPARATUS REQUIRED:
+Vivado
 Spartan6 FPGA
 
 **LOGIC DIAGRAM**
@@ -48,13 +48,20 @@ STEP:9  In the Design Object List Window, enter the pin location for each pin in
 STEP:10 Double click on the Implement Design and double click on the Generate Programming File to create a bitstream of the design.(.v) file is converted into .bit file here.
 STEP:11  On the board, by giving required input, the LEDs starts to glow light, indicating the output.
 
-VERILOG CODE
+# Program
+```
+module Half_adder(a,b,sum,carry);
+input a,b;
+output sum,carry;
+xor g1(sum,a,b);
+and g2(carry,a,b);
+endmodule
+```
+ 
+# Output
+![Half adder](https://github.com/navaneethans/VLSI-LAB-EXP-2/assets/164840515/4e158355-1869-4641-8c99-8ae67b91d336)
 
-   <<< TYPE YOUR VERILOG CODE >>>
 
-OUTPUT WAVEFORM
- <<< PASTE YOUR OUTPUT WAVEFORM >>>
-
-RESULT
-
+# RESULT
+Thus,half adder using Vivado is stimulated and synthesised.
 
